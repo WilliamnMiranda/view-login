@@ -1,0 +1,234 @@
+/* default configs */
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Black.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter-Regular';
+}
+
+/* default style components */
+main{
+    display: flex;
+    width: 60%;
+    height: 850px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+button{
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+input {
+    width: 100%;
+    border-radius: 40px;
+    outline: none;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.49);
+    margin-bottom: 20px;
+}
+body {
+    background-color: #C8C8C8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter';
+}
+h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.9em;
+    color: #3F3F3F;
+    font-family: 'Inter';
+}
+form{
+    margin: 0px auto;
+    margin-top: 30px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    position: relative;
+    left:6%;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: rgba(108, 99, 255, 0.69);
+}
+h1 span{
+    color: #6C63FF;
+}
+/* class styles */
+.images{
+   padding: 30px;
+   background-color: #6C63FF;;
+   width: 50%;
+}
+.login{
+    width: 50%;
+    padding:30px;
+}
+.bubbles{
+    display: flex;
+    justify-content: space-between;
+}
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.socialLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    color: #7A7A7A;        
+    border: 2px solid rgba(0, 0, 0, 0.49);
+    font-weight: bold;
+    font-size: 1.0em;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.socialLogin img{
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    position: relative;
+    top:-1px;
+}
+.containerLine{
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    margin:10px 0px;
+}
+.textLine{
+    position: absolute;
+    left: 43%;
+    top:-10px;
+    z-index: 2;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.5);
+}
+.recoverPassword{
+    color:#7A7A7A;
+    width: 100%;
+    position: relative;
+    left:6%;
+    text-align: start;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.recoverPassword span{
+    color: rgba(108, 99, 255, 0.69);
+}
+.buttonLogin{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    background-color: #6C63FF;
+    width: 85%;
+    height: 40px;
+}
+.svgs{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    width: 100%;
+    height: 100%;
+}
+.svgs svg{
+    width: 300px;
+    height: 300px;
+}
+.left{
+    width: 100%;
+    text-align: start;
+}
+.right{
+    width: 100%;
+    text-align: end;
+}
+.left , .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left p , .right p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.svgs span {
+    color:#3F3F3F;
+}
+.left img,.right img{
+    width: 220px;
+    height: 220px;
+}
+
+/* media querys */
+@media (max-width: 1000px){
+  main{
+    width: 100%;
+    height: 100%;
+  }
+  .images{
+    display: none;
+  }
+  .login{
+    width: 100%;
+  }
+  form{
+    width: 100%;
+  }
+}
+@media (max-width: 1430px){
+    .left img,.right img{
+        width: 170px;
+        height: 170px;
+    } 
+    .left , .right{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .left p , .right p {
+        font-size: 1.5em;
+    }
+      form{
+        width: 100%;
+      }
+}
